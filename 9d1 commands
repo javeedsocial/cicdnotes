@@ -1,0 +1,5 @@
+sudo mkdir /opt/jenkins 
+ 
+cd opt/jenkins
+sudo wget http://localhost:8081/jnlpJars/agent.jar
+sudo java -jar agent.jar -jnlpUrl http://localhost:8081/computer/slave-node-1/slave-agent.jnlp -workDir "/opt/jenkins" 
