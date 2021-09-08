@@ -1,0 +1,128 @@
+Started by user [8mha:////4MSKMf95BCorUMFBpaipxIPfxGBCfIZDmBA6g/4P/UTJAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building in workspace /home/labsuser/jenkins/workspace/7d2-sonar-jenkins
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/javeedsocial/simple-java-maven-app.git
+ > git init /home/labsuser/jenkins/workspace/7d2-sonar-jenkins # timeout=10
+Fetching upstream changes from https://github.com/javeedsocial/simple-java-maven-app.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.31.0'
+ > git fetch --tags --force --progress -- https://github.com/javeedsocial/simple-java-maven-app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/javeedsocial/simple-java-maven-app.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d429203aa304cba0a1beb7fda8219d916c1e2fce (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d429203aa304cba0a1beb7fda8219d916c1e2fce # timeout=10
+Commit message: "Merge pull request #264 from MarkEWaite/use-latest-compiler-plugin"
+First time build. Skipping changelog.
+Unpacking https://repo1.maven.org/maven2/org/sonarsource/scanner/cli/sonar-scanner-cli/3.2.0.1227/sonar-scanner-cli-3.2.0.1227.zip to /home/labsuser/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/LocalSonarScanner on Jenkins
+[7d2-sonar-jenkins] $ /home/labsuser/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/LocalSonarScanner/bin/sonar-scanner -Dsonar.host.url=http://localhost:9000 ******** -Dsonar.projectKey=com.mycompany.app:my-app -Dsonar.projectName=my-app -Dsonar.projectVersion=1.0 -Dsonar.sources=./src -Dsonar.java.binaries=. -Dsonar.projectBaseDir=/home/labsuser/jenkins/workspace/7d2-sonar-jenkins
+INFO: Scanner configuration file: /home/labsuser/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/LocalSonarScanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: SonarQube Scanner 3.2.0.1227
+INFO: Java 1.8.0_265 Private Build (64-bit)
+INFO: Linux 4.4.0-139-generic amd64
+INFO: User cache: /home/labsuser/.sonar/cache
+INFO: SonarQube server 8.6.1
+INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+WARN: SonarScanner will require Java 11 to run starting in SonarQube 8.x
+INFO: Load global settings
+INFO: Load global settings (done) | time=168ms
+INFO: Server id: BF41A1F2-AXs65BwuVMa_TdSI8Q7r
+INFO: User cache: /home/labsuser/.sonar/cache
+INFO: Load/download plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=160ms
+INFO: Load/download plugins (done) | time=2896ms
+INFO: Process project properties
+INFO: Process project properties (done) | time=10ms
+INFO: Execute project builders
+INFO: Execute project builders (done) | time=2ms
+INFO: Project key: com.mycompany.app:my-app
+INFO: Base dir: /home/labsuser/jenkins/workspace/7d2-sonar-jenkins
+INFO: Working dir: /home/labsuser/jenkins/workspace/7d2-sonar-jenkins/.scannerwork
+INFO: Load project settings for component key: 'com.mycompany.app:my-app'
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=197ms
+INFO: Auto-configuring with CI 'Jenkins'
+INFO: Load active rules
+INFO: Load active rules (done) | time=3820ms
+INFO: Indexing files...
+INFO: Project configuration:
+WARN: Exception caught during execution of command '[/usr/bin/git, config, --system, --edit]' in '/usr/bin', return code '128', error message 'fatal: Invalid path '/usr/etc': No such file or directory
+'
+INFO: 2 files indexed
+INFO: 0 files ignored because of scm ignore settings
+INFO: Quality profile for java: Sonar way
+INFO: ------------- Run sensors on module my-app
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=27ms
+INFO: Sensor JavaSquidSensor [java]
+INFO: Configured Java source version (sonar.java.source): none
+INFO: JavaClasspath initialization
+WARN: Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property.
+INFO: JavaClasspath initialization (done) | time=8ms
+INFO: JavaTestClasspath initialization
+INFO: JavaTestClasspath initialization (done) | time=0ms
+INFO: Java Main Files AST scan
+INFO: 2 source files to be analyzed
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=6ms
+INFO: 2/2 source files have been analyzed
+INFO: Java Main Files AST scan (done) | time=2817ms
+INFO: Java Test Files AST scan
+INFO: 0 source files to be analyzed
+INFO: Java Test Files AST scan (done) | time=0ms
+INFO: 0/0 source files have been analyzed
+INFO: Java Generated Files AST scan
+INFO: 0 source files to be analyzed
+INFO: Java Generated Files AST scan (done) | time=1ms
+INFO: 0/0 source files have been analyzed
+INFO: Sensor JavaSquidSensor [java] (done) | time=3107ms
+INFO: Sensor CSS Rules [cssfamily]
+INFO: No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+INFO: Sensor CSS Rules [cssfamily] (done) | time=0ms
+INFO: Sensor JaCoCo XML Report Importer [jacoco]
+INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=5ms
+INFO: Sensor C# Properties [csharp]
+INFO: Sensor C# Properties [csharp] (done) | time=1ms
+INFO: Sensor SurefireSensor [java]
+INFO: parsing [/home/labsuser/jenkins/workspace/7d2-sonar-jenkins/target/surefire-reports]
+INFO: Sensor SurefireSensor [java] (done) | time=1ms
+INFO: Sensor JavaXmlSensor [java]
+INFO: Sensor JavaXmlSensor [java] (done) | time=1ms
+INFO: Sensor HTML [web]
+INFO: Sensor HTML [web] (done) | time=3ms
+INFO: Sensor VB.NET Properties [vbnet]
+INFO: Sensor VB.NET Properties [vbnet] (done) | time=1ms
+INFO: ------------- Run sensors on project
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=22ms
+INFO: Sensor Java CPD Block Indexer
+INFO: Sensor Java CPD Block Indexer (done) | time=14ms
+INFO: SCM Publisher SCM provider for this project is: git
+INFO: SCM Publisher 2 source files to be analyzed
+INFO: SCM Publisher 2/2 source files have been analyzed (done) | time=196ms
+INFO: CPD Executor 1 file had no CPD blocks
+INFO: CPD Executor Calculating CPD for 1 file
+INFO: CPD Executor CPD calculation finished (done) | time=7ms
+INFO: Analysis report generated in 210ms, dir size=88 KB
+INFO: Analysis report compressed in 90ms, zip size=14 KB
+INFO: Analysis report uploaded in 1848ms
+INFO: ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard?id=com.mycompany.app%3Amy-app
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AXuLk4BMBIx5WHDFUDob
+INFO: Analysis total time: 13.277 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 21.696s
+INFO: Final Memory: 20M/332M
+INFO: ------------------------------------------------------------------------
+Finished: SUCCESS

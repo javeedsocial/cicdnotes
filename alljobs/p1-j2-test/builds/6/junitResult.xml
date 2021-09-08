@@ -1,0 +1,24 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.52">
+  <suites>
+    <suite>
+      <file>/home/labsuser/jenkins/workspace/p1-j2-test/target/surefire-reports/TEST-com.bookzy.webapp.WebappApplicationTests.xml</file>
+      <name>com.bookzy.webapp.WebappApplicationTests</name>
+      <duration>4.619</duration>
+      <time>4.619</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>0.251</duration>
+          <className>com.bookzy.webapp.WebappApplicationTests</className>
+          <testName>contextLoads</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>4.619</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

@@ -1,0 +1,74 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<analysisReport plugin="analysis-model-api@10.3.0">
+  <id>-</id>
+  <name>-</name>
+  <originReportFile>-</originReportFile>
+  <subReports>
+    <analysisReport>
+      <id>pmd</id>
+      <name>PMD</name>
+      <originReportFile>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example/target/pmd.xml</originReportFile>
+      <subReports/>
+      <elements class="linked-hash-set">
+        <issue>
+          <category>Code Style</category>
+          <type>UnnecessaryModifier</type>
+          <severity>NORMAL</severity>
+          <lineStart>17</lineStart>
+          <lineEnd>19</lineEnd>
+          <columnStart>5</columnStart>
+          <columnEnd>19</columnEnd>
+          <lineRanges/>
+          <id>b9735f74-70d2-462c-bba9-43e1d0a78bbd</id>
+          <reference>1</reference>
+          <origin>pmd</origin>
+          <originName>PMD</originName>
+          <moduleName>my-app</moduleName>
+          <packageName>com.mycompany.app</packageName>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName>src/main/java/com/mycompany/app/App.java</fileName>
+          <message>Unnecessary modifier &apos;final&apos; on method &apos;getMessage&apos;: private methods cannot be overridden.</message>
+          <description></description>
+          <fingerprint>3A8FEA8AFDC40064C81E709EC7CB9A1C</fingerprint>
+        </issue>
+      </elements>
+      <infoMessages/>
+      <errorMessages/>
+      <countersByKey/>
+      <duplicatesSize>0</duplicatesSize>
+    </analysisReport>
+  </subReports>
+  <elements class="linked-hash-set"/>
+  <infoMessages>
+    <string>Searching for all files in &apos;/home/labsuser/jenkins/workspace/7d1 wrnings plugin example&apos; that match the pattern &apos;**/pmd.xml&apos;</string>
+    <string>-&gt; found 1 file</string>
+    <string>Successfully parsed file /home/labsuser/jenkins/workspace/7d1 wrnings plugin example/target/pmd.xml</string>
+    <string>-&gt; found 1 issue (skipped 0 duplicates)</string>
+    <string>Post processing issues on &apos;Master&apos; with source code encoding &apos;UTF-8&apos;</string>
+    <string>Creating SCM blamer to obtain author and commit information for affected files</string>
+    <string>-&gt; No blamer installed yet. You need to install the &apos;git-forensics&apos; plugin to enable blaming for Git.</string>
+    <string>Resolving file names for all issues in source directory &apos;/home/labsuser/jenkins/workspace/7d1 wrnings plugin example&apos;</string>
+    <string>-&gt; resolved paths in source directory (1 found, 0 not found)</string>
+    <string>Resolving module names from module definitions (build.xml, pom.xml, or Manifest.mf files)</string>
+    <string>-&gt; resolved module names for 1 issues</string>
+    <string>Resolving package names (or namespaces) by parsing the affected files</string>
+    <string>-&gt; all affected files already have a valid package name</string>
+    <string>No filter has been set, publishing all 1 issues</string>
+    <string>Creating fingerprints for all affected code blocks to track issues over different builds</string>
+    <string>-&gt; created fingerprints for 1 issues (skipped 0 issues)</string>
+    <string>Copying affected files to Jenkins&apos; build folder &apos;/home/labsuser/jenkins/jobs/7d1 wrnings plugin example/builds/1/files-with-issues&apos;</string>
+    <string>-&gt; 0 copied, 0 not in workspace, 0 not-found, 0 with I/O error</string>
+    <string>Repository miner is not configured, skipping repository mining</string>
+    <string>Reference build recorder is not configured</string>
+    <string>Obtaining reference build from same job (7d1 wrnings plugin example)</string>
+    <string>No valid reference build found that meets the criteria (NO_JOB_FAILURE - SUCCESSFUL_QUALITY_GATE)</string>
+    <string>All reported issues will be considered outstanding</string>
+    <string>No quality gates have been set - skipping</string>
+    <string>Health report is disabled - skipping</string>
+    <string>Created analysis result for 1 issues (found 0 new issues, fixed 0 issues)</string>
+    <string>Attaching ResultAction with ID &apos;pmd&apos; to build &apos;7d1 wrnings plugin example #1&apos;.</string>
+  </infoMessages>
+  <errorMessages/>
+  <countersByKey/>
+  <duplicatesSize>0</duplicatesSize>
+</analysisReport>

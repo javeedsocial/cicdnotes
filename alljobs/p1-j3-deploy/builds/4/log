@@ -1,0 +1,129 @@
+Started by user [8mha:////4MSKMf95BCorUMFBpaipxIPfxGBCfIZDmBA6g/4P/UTJAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building on master in workspace /home/labsuser/jenkins/workspace/p1-j3-deploy
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/labsuser/jenkins/workspace/p1-j3-deploy/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/javeedsocial/bookzy.git # timeout=10
+Fetching upstream changes from https://github.com/javeedsocial/bookzy.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.31.0'
+ > git fetch --tags --force --progress -- https://github.com/javeedsocial/bookzy.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 844f54d824bd70986b0545442240800309ce236b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 844f54d824bd70986b0545442240800309ce236b # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 844f54d824bd70986b0545442240800309ce236b # timeout=10
+[p1-j3-deploy] $ /bin/sh -xe /tmp/jenkins6915999328982616135.sh
++ mvn package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.bookzy:webapp >--------------------------
+[INFO] Building webapp 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/labsuser/jenkins/workspace/p1-j3-deploy/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ webapp ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.bookzy.webapp.WebappApplicationTests
+16:25:18.511 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:25:18.583 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:25:18.621 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.bookzy.webapp.WebappApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:25:18.693 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bookzy.webapp.WebappApplicationTests], using SpringBootContextLoader
+16:25:18.698 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bookzy.webapp.WebappApplicationTests]: class path resource [com/bookzy/webapp/WebappApplicationTests-context.xml] does not exist
+16:25:18.699 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bookzy.webapp.WebappApplicationTests]: class path resource [com/bookzy/webapp/WebappApplicationTestsContext.groovy] does not exist
+16:25:18.699 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bookzy.webapp.WebappApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:25:18.700 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bookzy.webapp.WebappApplicationTests]: WebappApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:25:18.800 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.bookzy.webapp.WebappApplicationTests]
+16:25:18.980 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/labsuser/jenkins/workspace/p1-j3-deploy/target/classes/com/bookzy/webapp/WebappApplication.class]
+16:25:18.981 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bookzy.webapp.WebappApplication for test class com.bookzy.webapp.WebappApplicationTests
+16:25:19.097 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.bookzy.webapp.WebappApplicationTests]: using defaults.
+16:25:19.098 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:25:19.106 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+16:25:19.106 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:25:19.107 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@581ac8a8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d4e5011, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@57d7f8ca, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@76c3e77a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78123e82, org.springframework.test.context.event.EventPublishingTestExecutionListener@67c33749, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@fba92d3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@662b4c69, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@fa49800, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@71238fc2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2a54a73f]
+16:25:19.110 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7133da86 testClass = WebappApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3232a28a testClass = WebappApplicationTests, locations = '{}', classes = '{class com.bookzy.webapp.WebappApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2f112965, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@d4342c2, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f0f1111, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@47d90b9e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+16:25:19.195 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-09-05 16:25:19.714  INFO 9104 --- [           main] c.bookzy.webapp.WebappApplicationTests   : Starting WebappApplicationTests on ubuntu1804 with PID 9104 (started by labsuser in /home/labsuser/jenkins/workspace/p1-j3-deploy)
+2021-09-05 16:25:19.716  INFO 9104 --- [           main] c.bookzy.webapp.WebappApplicationTests   : No active profile set, falling back to default profiles: default
+2021-09-05 16:25:22.188  INFO 9104 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-05 16:25:22.713  INFO 9104 --- [           main] c.bookzy.webapp.WebappApplicationTests   : Started WebappApplicationTests in 3.505 seconds (JVM running for 5.527)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.691 s - in com.bookzy.webapp.WebappApplicationTests
+2021-09-05 16:25:23.189  INFO 9104 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.3:war (default-war) @ webapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [webapp] in [/home/labsuser/jenkins/workspace/p1-j3-deploy/target/webapp-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Webapp assembled in [1767 msecs]
+[INFO] Building war: /home/labsuser/jenkins/workspace/p1-j3-deploy/target/webapp-0.0.1-SNAPSHOT.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.2.RELEASE:repackage (repackage) @ webapp ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.432 s
+[INFO] Finished at: 2021-09-05T16:25:28Z
+[INFO] ------------------------------------------------------------------------
+[p1-j3-deploy] $ /bin/sh -xe /tmp/jenkins406064241406711669.sh
++ pwd
+/home/labsuser/jenkins/workspace/p1-j3-deploy
++ ls -l
+total 40
+-rw-r--r--  1 labsuser labsuser   780 Sep  5 14:50 HELP.md
+-rwxr-xr-x  1 labsuser labsuser 10070 Sep  5 14:50 mvnw
+-rw-r--r--  1 labsuser labsuser  6608 Sep  5 14:50 mvnw.cmd
+-rw-r--r--  1 labsuser labsuser  1427 Sep  5 14:50 pom.xml
+-rw-r--r--  1 labsuser labsuser     8 Sep  5 14:50 README.md
+drwxr-xr-x  4 labsuser labsuser  4096 Sep  5 14:50 src
+drwxr-xr-x 10 labsuser labsuser  4096 Sep  5 16:25 target
++ cd target
++ ls -l
+total 32464
+drwxr-xr-x 3 labsuser labsuser     4096 Sep  5 14:51 classes
+drwxr-xr-x 3 labsuser labsuser     4096 Sep  5 14:51 generated-sources
+drwxr-xr-x 3 labsuser labsuser     4096 Sep  5 14:51 generated-test-sources
+drwxr-xr-x 2 labsuser labsuser     4096 Sep  5 14:51 maven-archiver
+drwxr-xr-x 3 labsuser labsuser     4096 Sep  5 14:51 maven-status
+drwxr-xr-x 2 labsuser labsuser     4096 Sep  5 14:51 surefire-reports
+drwxr-xr-x 3 labsuser labsuser     4096 Sep  5 14:51 test-classes
+drwxr-xr-x 4 labsuser labsuser     4096 Sep  5 14:51 webapp-0.0.1-SNAPSHOT
+-rw-r--r-- 1 labsuser labsuser 17590841 Sep  5 16:25 webapp-0.0.1-SNAPSHOT.war
+-rw-r--r-- 1 labsuser labsuser 15606664 Sep  5 16:25 webapp-0.0.1-SNAPSHOT.war.original
++ ls webapp-0.0.1-SNAPSHOT.war
+webapp-0.0.1-SNAPSHOT.war
+Finished: SUCCESS

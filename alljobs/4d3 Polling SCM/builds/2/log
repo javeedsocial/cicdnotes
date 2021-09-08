@@ -1,0 +1,74 @@
+Started by user [8mha:////4MSKMf95BCorUMFBpaipxIPfxGBCfIZDmBA6g/4P/UTJAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building in workspace /home/labsuser/jenkins/workspace/4d3 Polling SCM
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/labsuser/jenkins/workspace/4d3 Polling SCM/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/javeedsocial/simple-java-maven-app.git # timeout=10
+Fetching upstream changes from https://github.com/javeedsocial/simple-java-maven-app.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.31.0'
+ > git fetch --tags --force --progress -- https://github.com/javeedsocial/simple-java-maven-app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d429203aa304cba0a1beb7fda8219d916c1e2fce (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d429203aa304cba0a1beb7fda8219d916c1e2fce # timeout=10
+Commit message: "Merge pull request #264 from MarkEWaite/use-latest-compiler-plugin"
+ > git rev-list --no-walk d429203aa304cba0a1beb7fda8219d916c1e2fce # timeout=10
+[4d3 Polling SCM] $ /bin/sh -xe /tmp/jenkins17896841812745964781.sh
++ mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-app ---
+[INFO] Deleting /home/labsuser/jenkins/workspace/4d3 Polling SCM/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven) @ my-app ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ my-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/labsuser/jenkins/workspace/4d3 Polling SCM/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ my-app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/labsuser/jenkins/workspace/4d3 Polling SCM/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ my-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/labsuser/jenkins/workspace/4d3 Polling SCM/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ my-app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/labsuser/jenkins/workspace/4d3 Polling SCM/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ my-app ---
+[INFO] Surefire report directory: /home/labsuser/jenkins/workspace/4d3 Polling SCM/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.mycompany.app.AppTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ my-app ---
+[INFO] Building jar: /home/labsuser/jenkins/workspace/4d3 Polling SCM/target/my-app-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ my-app ---
+[INFO] Installing /home/labsuser/jenkins/workspace/4d3 Polling SCM/target/my-app-1.0-SNAPSHOT.jar to /home/labsuser/.m2/repository/com/mycompany/app/my-app/1.0-SNAPSHOT/my-app-1.0-SNAPSHOT.jar
+[INFO] Installing /home/labsuser/jenkins/workspace/4d3 Polling SCM/pom.xml to /home/labsuser/.m2/repository/com/mycompany/app/my-app/1.0-SNAPSHOT/my-app-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.493 s
+[INFO] Finished at: 2021-08-21T14:57:27Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

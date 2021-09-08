@@ -1,0 +1,9 @@
+Started by upstream project "[8mha:////4J0zRdJ7KOcWWistaFlnduUVHM4zxVh0vvcyjy1svw+xAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JP2k0sycFH0AsN5xmMAAAAA=[0mbuild" build number [8mha:////4MZPxYX7JFPObtpJvZCH+diFLnz/LHs2Rj38NYbRPzciAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBh79rPwk/aTSzJwUfWMAFgZpD8EAAAA=[0m3
+originally caused by:
+ Started by user [8mha:////4MSKMf95BCorUMFBpaipxIPfxGBCfIZDmBA6g/4P/UTJAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building in workspace /home/labsuser/jenkins/workspace/deploy
+[deploy] $ /bin/sh -xe /tmp/jenkins13869655500660909170.sh
++ echo I am seploy I will deploy
+I am seploy I will deploy
+Finished: SUCCESS

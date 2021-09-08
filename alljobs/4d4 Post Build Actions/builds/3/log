@@ -1,0 +1,35 @@
+Started by user [8mha:////4MSKMf95BCorUMFBpaipxIPfxGBCfIZDmBA6g/4P/UTJAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building in workspace /home/labsuser/jenkins/workspace/4d4 Post Build Actions
+[4d4 Post Build Actions] $ /bin/sh -xe /tmp/jenkins17875979999944517378.sh
++ ll
+/tmp/jenkins17875979999944517378.sh: 2: /tmp/jenkins17875979999944517378.sh: ll: not found
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: javeedsocial@gmail.com
+ERROR: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials j16sm4707543pfc.70 - gsmtp
+
+javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials j16sm4707543pfc.70 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:947)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:858)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:762)
+	at javax.mail.Service.connect(Service.java:364)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:171)
+	at javax.mail.Transport.send0(Transport.java:230)
+	at javax.mail.Transport.send(Transport.java:100)
+	at hudson.tasks.MailSender.run(MailSender.java:131)
+	at hudson.tasks.Mailer.perform(Mailer.java:179)
+	at hudson.tasks.Mailer.perform(Mailer.java:142)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:21)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:808)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:757)
+	at hudson.model.Build$BuildExecution.post2(Build.java:179)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:701)
+	at hudson.model.Run.execute(Run.java:1937)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:100)
+	at hudson.model.Executor.run(Executor.java:433)
+Finished: FAILURE

@@ -1,0 +1,74 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<analysisReport plugin="analysis-model-api@10.3.0">
+  <id>-</id>
+  <name>-</name>
+  <originReportFile>-</originReportFile>
+  <subReports>
+    <analysisReport>
+      <id>findbugs</id>
+      <name>FindBugs</name>
+      <originReportFile>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example/target/findbugsXml.xml</originReportFile>
+      <subReports/>
+      <elements class="linked-hash-set">
+        <issue>
+          <category>PERFORMANCE</category>
+          <type>SS_SHOULD_BE_STATIC</type>
+          <severity>LOW</severity>
+          <lineStart>9</lineStart>
+          <lineEnd>9</lineEnd>
+          <columnStart>0</columnStart>
+          <columnEnd>0</columnEnd>
+          <lineRanges/>
+          <id>a2827bb1-96cc-4fef-86b1-5eb33ed4b7dc</id>
+          <reference>1</reference>
+          <origin>findbugs</origin>
+          <originName>FindBugs</originName>
+          <moduleName>my-app</moduleName>
+          <packageName>com.mycompany.app</packageName>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName>src/main/java/com/mycompany/app/App.java</fileName>
+          <message>Unread field: com.mycompany.app.App.message; should this field be static?</message>
+          <description></description>
+          <fingerprint>82c8f1ff44cb18d1cbef3eca52e87a8d</fingerprint>
+        </issue>
+      </elements>
+      <infoMessages/>
+      <errorMessages/>
+      <countersByKey/>
+      <duplicatesSize>0</duplicatesSize>
+    </analysisReport>
+  </subReports>
+  <elements class="linked-hash-set"/>
+  <infoMessages>
+    <string>Searching for all files in &apos;/home/labsuser/jenkins/workspace/7d1 wrnings plugin example&apos; that match the pattern &apos;**/findbugsXml.xml&apos;</string>
+    <string>-&gt; found 1 file</string>
+    <string>Successfully parsed file /home/labsuser/jenkins/workspace/7d1 wrnings plugin example/target/findbugsXml.xml</string>
+    <string>-&gt; found 1 issue (skipped 0 duplicates)</string>
+    <string>Post processing issues on &apos;Master&apos; with source code encoding &apos;UTF-8&apos;</string>
+    <string>Creating SCM blamer to obtain author and commit information for affected files</string>
+    <string>-&gt; No blamer installed yet. You need to install the &apos;git-forensics&apos; plugin to enable blaming for Git.</string>
+    <string>Resolving file names for all issues in source directory &apos;/home/labsuser/jenkins/workspace/7d1 wrnings plugin example&apos;</string>
+    <string>-&gt; resolved paths in source directory (1 found, 0 not found)</string>
+    <string>Resolving module names from module definitions (build.xml, pom.xml, or Manifest.mf files)</string>
+    <string>-&gt; all issues already have a valid module name</string>
+    <string>Resolving package names (or namespaces) by parsing the affected files</string>
+    <string>-&gt; all affected files already have a valid package name</string>
+    <string>No filter has been set, publishing all 1 issues</string>
+    <string>Creating fingerprints for all affected code blocks to track issues over different builds</string>
+    <string>-&gt; created fingerprints for 0 issues (skipped 1 issues)</string>
+    <string>Copying affected files to Jenkins&apos; build folder &apos;/home/labsuser/jenkins/jobs/7d1 wrnings plugin example/builds/1/files-with-issues&apos;</string>
+    <string>-&gt; 0 copied, 0 not in workspace, 0 not-found, 0 with I/O error</string>
+    <string>Repository miner is not configured, skipping repository mining</string>
+    <string>Reference build recorder is not configured</string>
+    <string>Obtaining reference build from same job (7d1 wrnings plugin example)</string>
+    <string>No valid reference build found that meets the criteria (NO_JOB_FAILURE - SUCCESSFUL_QUALITY_GATE)</string>
+    <string>All reported issues will be considered outstanding</string>
+    <string>No quality gates have been set - skipping</string>
+    <string>Health report is disabled - skipping</string>
+    <string>Created analysis result for 1 issues (found 0 new issues, fixed 0 issues)</string>
+    <string>Attaching ResultAction with ID &apos;findbugs&apos; to build &apos;7d1 wrnings plugin example #1&apos;.</string>
+  </infoMessages>
+  <errorMessages/>
+  <countersByKey/>
+  <duplicatesSize>0</duplicatesSize>
+</analysisReport>

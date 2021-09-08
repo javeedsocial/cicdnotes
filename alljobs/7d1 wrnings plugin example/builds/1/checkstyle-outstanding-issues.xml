@@ -1,0 +1,242 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<analysisReport plugin="analysis-model-api@10.3.0">
+  <id>-</id>
+  <name>-</name>
+  <originReportFile>-</originReportFile>
+  <subReports>
+    <analysisReport>
+      <id>checkstyle</id>
+      <name>CheckStyle</name>
+      <originReportFile>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example/target/checkstyle-result.xml</originReportFile>
+      <subReports/>
+      <elements class="linked-hash-set">
+        <issue>
+          <category>Javadoc</category>
+          <type>JavadocPackageCheck</type>
+          <severity>ERROR</severity>
+          <lineStart>1</lineStart>
+          <lineEnd>1</lineEnd>
+          <columnStart>0</columnStart>
+          <columnEnd>0</columnEnd>
+          <lineRanges/>
+          <id>6c9680dc-2133-45a0-8ba7-16c794b642eb</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName>com.mycompany.app</packageName>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName>src/main/java/com/mycompany/app/App.java</fileName>
+          <message>Missing package-info.java file.</message>
+          <description></description>
+          <fingerprint>235DAA4420152B921C57E8153A1B34E6</fingerprint>
+        </issue>
+        <issue>
+          <category>Blocks</category>
+          <type>LeftCurlyCheck</type>
+          <severity reference="../../issue/severity"/>
+          <lineStart>7</lineStart>
+          <lineEnd>7</lineEnd>
+          <columnStart>1</columnStart>
+          <columnEnd>1</columnEnd>
+          <lineRanges/>
+          <id>01d6a5db-27db-48c3-b784-371e13338881</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName reference="../../issue/packageName"/>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName reference="../../issue/fileName"/>
+          <message>&apos;{&apos; at column 1 should be on the previous line.</message>
+          <description></description>
+          <fingerprint>FD4797B57AFCF2431497F22386479B1B</fingerprint>
+        </issue>
+        <issue>
+          <category>Javadoc</category>
+          <type>JavadocVariableCheck</type>
+          <severity reference="../../issue/severity"/>
+          <lineStart>9</lineStart>
+          <lineEnd>9</lineEnd>
+          <columnStart>5</columnStart>
+          <columnEnd>5</columnEnd>
+          <lineRanges/>
+          <id>715c4c70-8ef9-4014-b904-7845c5002546</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName reference="../../issue/packageName"/>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName reference="../../issue/fileName"/>
+          <message>Missing a Javadoc comment.</message>
+          <description></description>
+          <fingerprint>722EAA0C63E8D8A29218A69EF0578A5E</fingerprint>
+        </issue>
+        <issue>
+          <category>Javadoc</category>
+          <type>MissingJavadocMethodCheck</type>
+          <severity reference="../../issue/severity"/>
+          <lineStart>11</lineStart>
+          <lineEnd>11</lineEnd>
+          <columnStart>5</columnStart>
+          <columnEnd>5</columnEnd>
+          <lineRanges/>
+          <id>83081157-e079-406c-8d17-b84898f52d49</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName reference="../../issue/packageName"/>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName reference="../../issue/fileName"/>
+          <message reference="../../issue[3]/message"/>
+          <description></description>
+          <fingerprint>8BC4FDD748930EF7633A2EF54DDC1428</fingerprint>
+        </issue>
+        <issue>
+          <category>Whitespace</category>
+          <type>WhitespaceAroundCheck</type>
+          <severity reference="../../issue/severity"/>
+          <lineStart>11</lineStart>
+          <lineEnd>11</lineEnd>
+          <columnStart>18</columnStart>
+          <columnEnd>18</columnEnd>
+          <lineRanges/>
+          <id>755c0ba5-e252-415b-8337-e53e305e139a</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName reference="../../issue/packageName"/>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName reference="../../issue/fileName"/>
+          <message>&apos;{&apos; is not followed by whitespace.</message>
+          <description></description>
+          <fingerprint>8BC4FDD748930EF7633A2EF54DDC1428</fingerprint>
+        </issue>
+        <issue>
+          <category>Whitespace</category>
+          <type>WhitespaceAroundCheck</type>
+          <severity reference="../../issue/severity"/>
+          <lineStart>11</lineStart>
+          <lineEnd>11</lineEnd>
+          <columnStart>19</columnStart>
+          <columnEnd>19</columnEnd>
+          <lineRanges/>
+          <id>be39b035-5d9b-4b5c-8346-4c1e20344302</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName reference="../../issue/packageName"/>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName reference="../../issue/fileName"/>
+          <message>&apos;}&apos; is not preceded with whitespace.</message>
+          <description></description>
+          <fingerprint>8BC4FDD748930EF7633A2EF54DDC1428</fingerprint>
+        </issue>
+        <issue>
+          <category>Javadoc</category>
+          <type>MissingJavadocMethodCheck</type>
+          <severity reference="../../issue/severity"/>
+          <lineStart>13</lineStart>
+          <lineEnd>13</lineEnd>
+          <columnStart>5</columnStart>
+          <columnEnd>5</columnEnd>
+          <lineRanges/>
+          <id>bab5ac28-bdec-4169-99b4-fedc7e465cbb</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName reference="../../issue/packageName"/>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName reference="../../issue/fileName"/>
+          <message reference="../../issue[3]/message"/>
+          <description></description>
+          <fingerprint>49CD8BA174873B75EAF958D9CA2EF4B1</fingerprint>
+        </issue>
+        <issue>
+          <category>Checks</category>
+          <type>FinalParametersCheck</type>
+          <severity reference="../../issue/severity"/>
+          <lineStart>13</lineStart>
+          <lineEnd>13</lineEnd>
+          <columnStart>29</columnStart>
+          <columnEnd>29</columnEnd>
+          <lineRanges/>
+          <id>2660dae3-aaaa-49d3-b232-fe14ca411ff7</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName reference="../../issue/packageName"/>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName reference="../../issue/fileName"/>
+          <message>Parameter args should be final.</message>
+          <description></description>
+          <fingerprint>49CD8BA174873B75EAF958D9CA2EF4B1</fingerprint>
+        </issue>
+        <issue>
+          <category>Modifier</category>
+          <type>RedundantModifierCheck</type>
+          <severity reference="../../issue/severity"/>
+          <lineStart>17</lineStart>
+          <lineEnd>17</lineEnd>
+          <columnStart>13</columnStart>
+          <columnEnd>13</columnEnd>
+          <lineRanges/>
+          <id>85add1d4-edbc-422c-b6c9-beadca550b4e</id>
+          <reference>1</reference>
+          <origin>checkstyle</origin>
+          <originName>CheckStyle</originName>
+          <moduleName>my-app</moduleName>
+          <packageName reference="../../issue/packageName"/>
+          <pathName>/home/labsuser/jenkins/workspace/7d1 wrnings plugin example</pathName>
+          <fileName reference="../../issue/fileName"/>
+          <message>Redundant &apos;final&apos; modifier.</message>
+          <description></description>
+          <fingerprint>3A8FEA8AFDC40064C81E709EC7CB9A1C</fingerprint>
+        </issue>
+      </elements>
+      <infoMessages/>
+      <errorMessages/>
+      <countersByKey/>
+      <duplicatesSize>0</duplicatesSize>
+    </analysisReport>
+  </subReports>
+  <elements class="linked-hash-set"/>
+  <infoMessages>
+    <string>Searching for all files in &apos;/home/labsuser/jenkins/workspace/7d1 wrnings plugin example&apos; that match the pattern &apos;**/checkstyle-result.xml&apos;</string>
+    <string>-&gt; found 1 file</string>
+    <string>Successfully parsed file /home/labsuser/jenkins/workspace/7d1 wrnings plugin example/target/checkstyle-result.xml</string>
+    <string>-&gt; found 9 issues (skipped 0 duplicates)</string>
+    <string>Post processing issues on &apos;Master&apos; with source code encoding &apos;UTF-8&apos;</string>
+    <string>Creating SCM blamer to obtain author and commit information for affected files</string>
+    <string>-&gt; No blamer installed yet. You need to install the &apos;git-forensics&apos; plugin to enable blaming for Git.</string>
+    <string>Resolving file names for all issues in source directory &apos;/home/labsuser/jenkins/workspace/7d1 wrnings plugin example&apos;</string>
+    <string>-&gt; resolved paths in source directory (1 found, 0 not found)</string>
+    <string>Resolving module names from module definitions (build.xml, pom.xml, or Manifest.mf files)</string>
+    <string>-&gt; resolved module names for 9 issues</string>
+    <string>Resolving package names (or namespaces) by parsing the affected files</string>
+    <string>-&gt; resolved package names of 1 affected files</string>
+    <string>No filter has been set, publishing all 9 issues</string>
+    <string>Creating fingerprints for all affected code blocks to track issues over different builds</string>
+    <string>-&gt; created fingerprints for 9 issues (skipped 0 issues)</string>
+    <string>Copying affected files to Jenkins&apos; build folder &apos;/home/labsuser/jenkins/jobs/7d1 wrnings plugin example/builds/1/files-with-issues&apos;</string>
+    <string>-&gt; 1 copied, 0 not in workspace, 0 not-found, 0 with I/O error</string>
+    <string>Repository miner is not configured, skipping repository mining</string>
+    <string>Reference build recorder is not configured</string>
+    <string>Obtaining reference build from same job (7d1 wrnings plugin example)</string>
+    <string>No valid reference build found that meets the criteria (NO_JOB_FAILURE - SUCCESSFUL_QUALITY_GATE)</string>
+    <string>All reported issues will be considered outstanding</string>
+    <string>No quality gates have been set - skipping</string>
+    <string>Health report is disabled - skipping</string>
+    <string>Created analysis result for 9 issues (found 0 new issues, fixed 0 issues)</string>
+    <string>Attaching ResultAction with ID &apos;checkstyle&apos; to build &apos;7d1 wrnings plugin example #1&apos;.</string>
+  </infoMessages>
+  <errorMessages/>
+  <countersByKey/>
+  <duplicatesSize>0</duplicatesSize>
+</analysisReport>

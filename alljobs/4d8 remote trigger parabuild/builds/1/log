@@ -1,0 +1,8 @@
+Started by user [8mha:////4MSKMf95BCorUMFBpaipxIPfxGBCfIZDmBA6g/4P/UTJAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building in workspace /home/labsuser/jenkins/workspace/4d8 remote trigger parabuild
+[4d8 remote trigger parabuild] $ /bin/sh -xe /tmp/jenkins25315018795210930.sh
++ This was a successful build for cutsomer --
+/tmp/jenkins25315018795210930.sh: 2: /tmp/jenkins25315018795210930.sh: This: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
